@@ -1,0 +1,19 @@
+# Entornos virtuales de Python
+venv/
+.venv/
+env/
+
+# Cache y compilados de Python
+__pycache__/
+*.pyc
+build/
+dist/
+
+# Salidas que el programa puede volver a generar
+salidas/
+*.json.bak
+
+# Editor y sistema
+.vscode/
+.DS_Store
+Thumbs.db
