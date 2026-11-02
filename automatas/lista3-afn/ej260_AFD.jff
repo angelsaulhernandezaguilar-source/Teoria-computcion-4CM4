@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Ejercicio 260: AFD equivalente-->
+<structure>
+	<type>fa</type>
+	<automaton>
+		<state id="0" name="{A}">
+			<x>142.8</x>
+			<y>114.2</y>
+			<initial/>
+		</state>
+		<state id="1" name="∅">
+			<x>251.9</x>
+			<y>80.0</y>
+		</state>
+		<state id="2" name="{B,C}">
+			<x>251.9</x>
+			<y>148.5</y>
+		</state>
+		<state id="3" name="{A,B,C,D}">
+			<x>518.4</x>
+			<y>106.0</y>
+			<final/>
+		</state>
+		<state id="4" name="{A,C,D,E}">
+			<x>393.6</x>
+			<y>191.0</y>
+			<final/>
+		</state>
+		<state id="5" name="{A,B,C,D,E}">
+			<x>954.1</x>
+			<y>175.6</y>
+			<final/>
+		</state>
+		<state id="6" name="{A,C,E}">
+			<x>628.2</x>
+			<y>281.9</y>
+		</state>
+		<state id="7" name="{A,B,C,E}">
+			<x>772.7</x>
+			<y>261.8</y>
+		</state>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>2</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>4</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>3</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>5</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>6</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>5</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>5</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>5</from>
+			<to>5</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>6</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>6</from>
+			<to>7</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>7</from>
+			<to>5</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>7</from>
+			<to>5</to>
+			<read>1</read>
+		</transition>
+	</automaton>
+</structure>

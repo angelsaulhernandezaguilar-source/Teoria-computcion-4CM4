@@ -30,7 +30,6 @@
 		<state id="5" name="q5">
 			<x>830.0</x>
 			<y>300.0</y>
-			<final/>
 		</state>
 		<!--The list of transitions.-->
 		<transition>
@@ -85,12 +84,12 @@
 		</transition>
 		<transition>
 			<from>5</from>
-			<to>5</to>
+			<to>3</to>
 			<read>0</read>
 		</transition>
 		<transition>
 			<from>5</from>
-			<to>5</to>
+			<to>3</to>
 			<read>1</read>
 		</transition>
 	</automaton>

@@ -1,4 +1,6 @@
 # Autómatas de la Práctica 1
 
-- `lista2-afd/`: ejercicios 94-150 (Lista 2). Completo: 31 archivos `.jff`, reutilizados de la Tarea 2 de este curso, ya verificados programáticamente y minimizados donde fue posible. Ver `docs/04-jflap.md` para el detalle de cada uno y lo que falta documentar visualmente en JFLAP.
-- `lista3-afnd/`: ejercicios 151-263 (Lista 3: simplificación, AFN, AFN-λ y expresiones regulares). Pendiente — ver `docs/04-jflap.md`, sección "Lo que falta por completo".
+- `lista2-afd/`: problemas con asterisco de la Lista 2 (94 a 150).
+- `lista3-afn/`: problemas con asterisco de la Lista 3 (151 a 263). `AFN_T2_*` son los AFN de los problemas 162 a 188; `ej236_ER` a `ej258_ER` son expresiones regulares.
+
+El detalle de cada archivo está en [`docs/04-jflap.md`](../docs/04-jflap.md).
