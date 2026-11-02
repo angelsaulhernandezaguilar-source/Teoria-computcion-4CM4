@@ -13,29 +13,31 @@ Ambas definiciones coinciden en el fondo —modelos formales de cómputo y sus l
 
 ## 2. Sus orígenes: el programa de Hilbert, el Entscheidungsproblem y las paradojas de la lógica matemática
 
-A principios del siglo XX, David Hilbert propuso un programa para fundamentar toda la matemática sobre una base estrictamente formal: un conjunto finito de axiomas y reglas de inferencia del que se pudiera derivar mecánicamente cualquier verdad matemática, con la garantía de que ese sistema fuera a la vez consistente (libre de contradicciones) y completo (capaz de decidir toda proposición). Parte de ese programa era el *Entscheidungsproblem* ("problema de decisión"), planteado formalmente por Hilbert y Ackermann en 1928: ¿existe un procedimiento puramente mecánico que, dada cualquier proposición de la lógica de primer orden, determine en un número finito de pasos si es válida o no?
+A principios del siglo XX, David Hilbert propuso un programa para fundamentar toda la matemática sobre una base estrictamente formal (Davis, 2000): un conjunto finito de axiomas y reglas de inferencia del que se pudiera derivar mecánicamente cualquier verdad matemática, con la garantía de que ese sistema fuera a la vez consistente (libre de contradicciones) y completo (capaz de decidir toda proposición). Parte de ese programa era el *Entscheidungsproblem* ("problema de decisión"), planteado formalmente por Hilbert y Ackermann (1928): ¿existe un procedimiento puramente mecánico que, dada cualquier proposición de la lógica de primer orden, determine en un número finito de pasos si es válida o no?
 
-El programa de Hilbert se topó antes con las paradojas de la lógica matemática que ya venían inquietando a la disciplina: la paradoja de Russell sobre el conjunto de todos los conjuntos que no se contienen a sí mismos, y las técnicas de diagonalización de Cantor, que muestran que ciertos conjuntos infinitos no pueden enumerarse. Gödel llevó esa misma técnica de diagonalización a la aritmética y demostró en 1931, con sus teoremas de incompletitud, que ningún sistema formal suficientemente potente para expresar la aritmética puede ser a la vez consistente y completo: siempre habrá enunciados verdaderos que el sistema no pueda demostrar. Esto ya debilitaba el programa de Hilbert, pero dejaba abierta la pregunta más modesta del *Entscheidungsproblem*: aunque no se pueda demostrar todo, ¿se puede al menos decidir mecánicamente qué es válido?
+El programa de Hilbert se topó antes con las paradojas de la lógica matemática que ya venían inquietando a la disciplina: la paradoja de Russell sobre el conjunto de todos los conjuntos que no se contienen a sí mismos, y las técnicas de diagonalización de Cantor, que muestran que ciertos conjuntos infinitos no pueden enumerarse. Gödel (1931) llevó esa misma técnica de diagonalización a la aritmética y demostró, con sus teoremas de incompletitud, que ningún sistema formal suficientemente potente para expresar la aritmética puede ser a la vez consistente y completo: siempre habrá enunciados verdaderos que el sistema no pueda demostrar. Esto ya debilitaba el programa de Hilbert, pero dejaba abierta la pregunta más modesta del *Entscheidungsproblem*: aunque no se pueda demostrar todo, ¿se puede al menos decidir mecánicamente qué es válido?
 
-La respuesta llegó en 1936, de forma independiente, con Alonzo Church (usando el cálculo lambda y las funciones recursivas) y Alan Turing (usando su máquina abstracta, la máquina de Turing): ambos demostraron que el *Entscheidungsproblem* no tiene solución algorítmica, es decir, que no existe tal procedimiento mecánico general. Para poder demostrar esa imposibilidad, Turing tuvo que hacer algo adicional y de enorme trascendencia: dar, por primera vez, una definición formal y precisa de qué significa "procedimiento mecánico" o "algoritmo", a través de su máquina. Esa definición es, en sentido estricto, el punto de partida de la Teoría de la Computación como disciplina propia.
+La respuesta llegó en 1936, de forma independiente, con Church (1936), mediante el cálculo lambda y las funciones recursivas, y Turing (1936), mediante su máquina abstracta: ambos demostraron que el *Entscheidungsproblem* no tiene solución algorítmica, es decir, que no existe tal procedimiento mecánico general. Para poder demostrar esa imposibilidad, Turing tuvo que hacer algo adicional y de enorme trascendencia: dar, por primera vez, una definición formal y precisa de qué significa "procedimiento mecánico" o "algoritmo", a través de su máquina. Esa definición es, en sentido estricto, el punto de partida de la Teoría de la Computación como disciplina propia.
 
 ## 3. Sus tres ramas y la pregunta que responde cada una
 
-- **Teoría de autómatas y lenguajes formales.** Estudia distintos modelos de máquina abstracta (autómatas finitos, autómatas de pila, máquinas de Turing) y los lenguajes que cada uno puede reconocer o generar. Responde a la pregunta: *¿qué modelo mínimo de máquina —y qué tipo de gramática— basta para reconocer un lenguaje dado?*
-- **Computabilidad.** Estudia qué problemas admiten en absoluto una solución algorítmica, sin importar cuánto tiempo o memoria tome resolverlos. Responde a la pregunta: *¿es posible calcular esto, existe algún algoritmo que lo resuelva?* (el problema de la detención —*halting problem*— es su ejemplo canónico de problema indecidible).
-- **Complejidad computacional.** Da por hecho que un problema es computable y pregunta, en cambio, con qué eficiencia —cuánto tiempo, cuánta memoria— puede resolverse, y cómo se comparan entre sí distintos problemas según esa dificultad (la pregunta P frente a NP es la más conocida de esta rama). Responde a la pregunta: *dado que sí se puede calcular, ¿qué tan caro es hacerlo?*
+- **Teoría de autómatas y lenguajes formales.** Estudia distintos modelos de máquina abstracta (autómatas finitos, autómatas de pila, máquinas de Turing) y los lenguajes que cada uno puede reconocer o generar. Responde a la pregunta: *¿qué modelo mínimo de máquina —y qué tipo de gramática— basta para reconocer un lenguaje dado?* (Hopcroft et al., 2007).
+- **Computabilidad.** Estudia qué problemas admiten en absoluto una solución algorítmica, sin importar cuánto tiempo o memoria tome resolverlos. Responde a la pregunta: *¿es posible calcular esto, existe algún algoritmo que lo resuelva?* (el problema de la detención —*halting problem*— es su ejemplo canónico de problema indecidible) (Sipser, 2013).
+- **Complejidad computacional.** Da por hecho que un problema es computable y pregunta, en cambio, con qué eficiencia —cuánto tiempo, cuánta memoria— puede resolverse, y cómo se comparan entre sí distintos problemas según esa dificultad (la pregunta P frente a NP es la más conocida de esta rama). Responde a la pregunta: *dado que sí se puede calcular, ¿qué tan caro es hacerlo?* (Arora y Barak, 2009).
 
 Las tres ramas están ordenadas, de hecho, en una jerarquía natural de exigencia: la teoría de autómatas trabaja con los modelos más restringidos y las preguntas más concretas; la computabilidad usa el modelo más general (la máquina de Turing) para preguntar si algo se puede resolver en absoluto; y la complejidad, una vez aceptado que algo es computable, mide cuánto cuesta.
 
 ## 4. La tesis de Church-Turing
 
-La tesis de Church-Turing afirma que toda función que sea "efectivamente calculable" —es decir, calculable siguiendo un procedimiento mecánico, paso a paso, por un ser humano con lápiz y papel y tiempo y memoria ilimitados— puede calcularse mediante una máquina de Turing. Dicho de otro modo: la noción intuitiva e informal de "algoritmo" coincide exactamente con la noción formal y precisa de "función computable por una máquina de Turing".
+La tesis de Church-Turing afirma que toda función que sea "efectivamente calculable" —es decir, calculable siguiendo un procedimiento mecánico, paso a paso, por un ser humano con lápiz y papel y tiempo y memoria ilimitados— puede calcularse mediante una máquina de Turing. Dicho de otro modo: la noción intuitiva e informal de "algoritmo" coincide exactamente con la noción formal y precisa de "función computable por una máquina de Turing" (Copeland, 2020).
 
 Varios modelos de cómputo completamente distintos entre sí se demostraron equivalentes a la máquina de Turing en cuanto al conjunto de funciones que pueden calcular: el cálculo lambda de Church, las funciones recursivas generales de Gödel y Herbrand, las máquinas de Post y los algoritmos de Markov, entre otros. El hecho de que modelos ideados de manera independiente, con formalismos completamente distintos, converjan siempre a la misma clase de funciones computables es la evidencia más fuerte a favor de la tesis.
 
 Se le llama *tesis* y no *teorema* porque no es un enunciado que se demuestre a partir de axiomas dentro de un sistema formal: relaciona una noción informal (qué significa que un humano pueda calcular algo "efectivamente", seguir un algoritmo) con una noción formal (la máquina de Turing). Como uno de los dos lados de esa relación —la noción intuitiva— nunca se definió formalmente, no hay manera de demostrar la equivalencia con el rigor de un teorema matemático; solo puede acumularse evidencia a favor (como la convergencia de todos los modelos conocidos), y por eso permanece, casi noventa años después, en la categoría de tesis ampliamente aceptada, no de teorema demostrado.
 
 ## 5. Alfabeto, cadena y lenguaje; operaciones sobre cadenas y lenguajes
+
+Las definiciones de esta sección siguen a Hopcroft et al. (2007) y Kozen (1997).
 
 - **Alfabeto (Σ).** Un conjunto finito y no vacío de símbolos. Ejemplo: Σ = {0, 1}.
 - **Cadena.** Una secuencia finita de símbolos tomados de un alfabeto Σ. La cadena que no tiene ningún símbolo se llama cadena vacía y se denota λ (o ε).
@@ -49,6 +51,8 @@ Se le llama *tesis* y no *teorema* porque no es un enunciado que se demuestre a 
 
 **Operaciones sobre lenguajes** (siendo L1 y L2 lenguajes sobre el mismo alfabeto):
 
+- *Potencia* (L^n): L⁰ = {λ} y L^(n+1) = L^n L, es decir, concatenar n cadenas de L.
+- *Reflexión* (L^R): {w^R : w ∈ L}, las cadenas de L escritas al revés.
 - *Unión* (L1 ∪ L2): las cadenas que están en L1, en L2 o en ambos.
 - *Intersección* (L1 ∩ L2): las cadenas que están simultáneamente en L1 y en L2.
 - *Diferencia* (L1 − L2): las cadenas que están en L1 pero no en L2.
@@ -62,6 +66,8 @@ Se le llama *tesis* y no *teorema* porque no es un enunciado que se demuestre a 
 
 ## 6. La jerarquía de Chomsky
 
+Chomsky (1956) propuso esta clasificación; las máquinas asociadas se presentan en Hopcroft et al. (2007).
+
 | Tipo | Nombre | Forma de las reglas de producción | Máquina que lo reconoce |
 |---|---|---|---|
 | 0 | Recursivamente enumerable (sin restricción) | α → β, sin ninguna restricción sobre α y β | Máquina de Turing |
@@ -73,7 +79,7 @@ Cada tipo es un caso particular más restringido del anterior (todo lenguaje reg
 
 ## 7. Autómatas finitos y expresiones regulares
 
-**Definición formal de un AFD.** Un autómata finito determinista es una tupla M = (Q, Σ, δ, q₀, F), donde Q es un conjunto finito de estados, Σ es el alfabeto de entrada, δ: Q × Σ → Q es la función de transición (total: para cada estado y cada símbolo hay exactamente una transición definida), q₀ ∈ Q es el estado inicial y F ⊆ Q es el conjunto de estados de aceptación. Una cadena w se acepta si, al leerla símbolo por símbolo desde q₀ siguiendo δ, la trayectoria termina en un estado de F.
+**Definición formal de un AFD.** Según Sipser (2013), un autómata finito determinista es una tupla M = (Q, Σ, δ, q₀, F), donde Q es un conjunto finito de estados, Σ es el alfabeto de entrada, δ: Q × Σ → Q es la función de transición (total: para cada estado y cada símbolo hay exactamente una transición definida), q₀ ∈ Q es el estado inicial y F ⊆ Q es el conjunto de estados de aceptación. Una cadena w se acepta si, al leerla símbolo por símbolo desde q₀ siguiendo δ, la trayectoria termina en un estado de F.
 
 **Definición formal de un AFN.** Un autómata finito no determinista es igual, salvo que la función de transición es δ: Q × Σ → 2^Q (puede llevar a cero, uno o varios estados a la vez para el mismo símbolo desde el mismo estado); una cadena se acepta si existe *al menos una* trayectoria posible que termine en un estado de F. Una variante, el AFN-λ, permite además transiciones que no consumen ningún símbolo de la entrada.
 
@@ -87,4 +93,4 @@ Cada tipo es un caso particular más restringido del anterior (todo lenguaje reg
 
 ---
 
-*Referencias bibliográficas: ver `docs/bibliografia.md`, que concentra en formato APA séptima edición todas las fuentes citadas en este documento y en el resto del reporte, además de las cinco del Ejercicio 3.*
+*Las referencias en formato APA 7 están en [`bibliografia.md`](bibliografia.md).*
