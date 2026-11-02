@@ -1,0 +1,5 @@
+$ docker image ls
+REPOSITORY                              TAG                      SIZE
+entorno-py311                           latest                   432MB
+entorno-py312                           latest                   403MB
+entorno-py313                           latest                   384MB

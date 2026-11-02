@@ -1,0 +1,5 @@
+Prefijos (5): λ, a, ab, abb, abba
+
+Sufijos (5): abba, bba, ba, a, λ
+
+Subcadenas distintas (9): λ, a, b, ab, ba, bb, abb, bba, abba

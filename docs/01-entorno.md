@@ -40,7 +40,7 @@ En Windows y macOS, Docker sí usa por debajo una máquina virtual ligera (en Wi
 ### Definiciones: imagen, contenedor, volumen y puerto publicado
 
 - **Imagen.** La plantilla de solo lectura a partir de la cual se crean contenedores: por ejemplo, "Python 3.12 con las bibliotecas del proyecto ya instaladas". Se construye o se descarga una sola vez y se reutiliza. La relación entre imagen y contenedor es la misma que entre una clase y un objeto: de una sola imagen pueden crearse muchos contenedores.
-- **Contenedor.** Una instancia en ejecución de una imagen. De la misma imagen `python:3.12-slim` con este proyecto instalado pueden levantarse, por ejemplo, tres contenedores simultáneos (`py311`, `py312`, `py313` en este trabajo), cada uno con su propia versión del intérprete.
+- **Contenedor.** Una instancia en ejecución de una imagen. De una misma imagen pueden levantarse varios contenedores independientes. En este trabajo hay tres imágenes, una por versión de Python, y de cada una se crea su contenedor: `py311`, `py312` y `py313`.
 - **Volumen.** Una carpeta del disco real que se conecta ("monta") dentro del contenedor, para que los archivos que deben sobrevivir a que el contenedor se borre —código fuente, automatas `.jff`, resultados— sigan existiendo fuera de él. En este proyecto, la línea `- ..:/app` del `compose.yml` es exactamente eso: monta la carpeta del repositorio dentro de `/app` en el contenedor.
 - **Puerto publicado.** La conexión entre un puerto de la máquina real y un puerto del contenedor, necesaria para que algo que corre adentro (como la aplicación web de Flet) se pueda abrir desde el navegador de afuera. En este proyecto, `"8550:8550"` en el servicio `py312` publica el puerto 8550 del contenedor hacia el 8550 de la máquina anfitriona.
 
@@ -58,11 +58,14 @@ La etiqueta `latest` no significa "la versión más estable", sino simplemente "
 
 ## Parte B. Repositorio
 
-Esta parte se resuelve directamente sobre el repositorio de GitHub (no es un documento): crear la cuenta, el repositorio, el `README.md`, el `.gitignore`, hacer al menos cinco confirmaciones descriptivas y completar el ciclo de rama + Pull Request + fusión. El procedimiento paso a paso, con los comandos exactos, está explicado para que Saúl lo ejecute él mismo en el chat que acompaña este documento (y puede consultarse también resumido más abajo, en la sección "Cómo se hizo" al pie de este archivo). La evidencia que pide el enunciado —dirección del repositorio, captura de `git log --oneline --graph --all` y captura del Pull Request fusionado— se guarda en `evidencias/git/` y se enlaza aquí una vez capturada:
+El repositorio contiene `README.md`, `.gitignore` y el historial de confirmaciones. Los archivos `.jff` no se excluyen porque forman parte del entregable.
 
-- Dirección del repositorio: `PENDIENTE — pegar aquí la URL una vez creado en GitHub`
-- Captura de `git log --oneline --graph --all`: `evidencias/git/log-graph.png` (pendiente)
-- Captura del Pull Request fusionado: `evidencias/git/pull-request-fusionado.png` (pendiente)
+- **Dirección del repositorio:** https://github.com/angelsaulhernandezaguilar-source/Teoria-computacion-4CM4
+- **Historial:** [`evidencias/git/log-graph.txt`](../evidencias/git/log-graph.txt) y su captura:
+
+  ![git log](../evidencias/git/log-graph.png)
+
+- **Pull Request fusionado:** se agrega en `evidencias/git/pull-request-fusionado.png` al fusionar la rama `completar-practica`.
 
 ---
 
@@ -76,7 +79,7 @@ Esta parte se resuelve directamente sobre el repositorio de GitHub (no es un doc
 | `py312` | `python:3.12-slim` | La versión de referencia del curso. Es la que sirve la interfaz gráfica (servicio `py312`, con el puerto publicado). |
 | `py313` | `python:3.13-slim` | Una versión reciente, para verificar que el programa no depende de un comportamiento que haya cambiado entre versiones de Python. |
 
-**Justificación con fuentes.** El paquete `flet[web]==0.86.5` que fija `requirements.txt` declara en su metadato `Requires-Python` la condición `>=3.10` (PyPI, [flet 0.86.5](https://pypi.org/project/flet/0.86.5/)), así que en principio Python 3.10 ya cumpliría el requisito. Sin embargo, según el calendario oficial de mantenimiento de CPython, Python 3.10 llega a su fin de vida (*end-of-life*) en octubre de 2026 —es decir, prácticamente al momento de esta entrega—, mientras que Python 3.11 sigue en fase de soporte de seguridad hasta octubre de 2027 (Python Software Foundation, [*Status of Python versions*](https://devguide.python.org/versions/)). Por eso se eligió `python:3.11-slim` como la versión más antigua "viable" para `py311`, en vez de 3.10: es la más vieja que todavía cumple ambas condiciones a la vez (admite Flet **y** sigue recibiendo mantenimiento). `python:3.12-slim` se mantiene porque es la versión que fija el curso, y `python:3.13-slim` se añade como control hacia adelante, para detectar a tiempo si alguna futura versión de Python cambia algo de lo que el programa depende.
+**Justificación con fuentes.** El paquete `flet[web]==0.86.5` que fija `requirements.txt` declara en su metadato `Requires-Python` la condición `>=3.10` (PyPI, [flet 0.86.5](https://pypi.org/project/flet/0.86.5/)), así que en principio Python 3.10 ya cumpliría el requisito. Sin embargo, según el calendario oficial de mantenimiento de CPython, Python 3.10 llegó a su fin de vida (*end-of-life*) el 1 de octubre de 2026, mientras que Python 3.11 sigue en fase de soporte de seguridad hasta octubre de 2027 (Python Software Foundation, [*Status of Python versions*](https://devguide.python.org/versions/)). Por eso se eligió `python:3.11-slim` como la versión más antigua "viable" para `py311`, en vez de 3.10: es la más vieja que todavía cumple ambas condiciones a la vez (admite Flet **y** sigue recibiendo mantenimiento). `python:3.12-slim` se mantiene porque es la versión que fija el curso, y `python:3.13-slim` se añade como control hacia adelante, para detectar a tiempo si alguna futura versión de Python cambia algo de lo que el programa depende.
 
 ### El Dockerfile, línea por línea
 
@@ -137,10 +140,26 @@ No se incluyó la línea `version: '3.8'` que aparece en tutoriales antiguos: Co
 ```bash
 cd entorno
 docker compose build
-docker compose run --rm py311 python --version    # debe imprimir 3.11.x
-docker compose run --rm py312 python --version    # debe imprimir 3.12.x
-docker compose run --rm py313 python --version    # debe imprimir 3.13.x
+docker compose run --rm py311 python --version
+docker compose run --rm py312 python --version
+docker compose run --rm py313 python --version
 ```
+
+Salida obtenida (texto en [`evidencias/docker/versiones.txt`](../evidencias/docker/versiones.txt)):
+
+![python --version en los tres contenedores](../evidencias/docker/versiones.png)
+
+Las imágenes construidas están en [`evidencias/docker/imagenes.txt`](../evidencias/docker/imagenes.txt).
+
+### Por qué `requirements.txt` fija todas las dependencias
+
+La primera versión fijaba solo `flet[web]==0.86.5` y `pytest==8.3.4`. Al construir la imagen, pip instaló FastAPI 0.162.0, que ya no admite el argumento `openapi_prefix` que Flet 0.86.5 le pasa, y la interfaz terminaba al arrancar con este error:
+
+```text
+TypeError: FastAPI.__init__() got an unexpected keyword argument 'openapi_prefix'
+```
+
+Las pruebas aprobaban de todos modos, porque el núcleo no depende de Flet. Se resolvió fijando `fastapi==0.128.0` y `starlette==0.50.0`, y se versionó la lista completa, como recomienda el Anexo 2 con `pip freeze`. Es un ejemplo directo de lo que pasa cuando una dependencia indirecta queda sin versión.
 
 ### Instalación de Docker, paso a paso
 
@@ -156,7 +175,7 @@ docker compose run --rm py313 python --version    # debe imprimir 3.13.x
    ```bash
    cd entorno
    docker compose build
-   docker compose up py312        # levanta la interfaz y abre http://localhost:8550
+   docker compose up py312        # levanta la interfaz; abrir http://localhost:8550
    docker compose run --rm py311 pytest -q
    docker compose run --rm py313 pytest -q
    docker compose down            # apaga y limpia
@@ -164,13 +183,3 @@ docker compose run --rm py313 python --version    # debe imprimir 3.13.x
 5. **Si se prefiere Podman en lugar de Docker Desktop** (por ejemplo, por no requerir un demonio con privilegios): los mismos comandos funcionan sustituyendo `docker` por `podman` (`podman compose build`, etc.); se indicó así en el `README.md` de este repositorio.
 
 **Diagnóstico rápido de fallas comunes:** primero `docker compose ps` para ver el estado de cada servicio, después `docker compose logs <servicio>` para ver por qué falló. Si `port is already allocated`, algo más en la máquina ya está usando el puerto 8550: cambiar el número de la izquierda en `ports` (por ejemplo `"8551:8550"`).
-
-### Nota sobre el problema del compilador en Visual Studio Code
-
-Python no se compila: es un lenguaje interpretado, así que "el compilador falla" en VS Code casi nunca significa un error de compilación real, sino uno de estos tres problemas, de más a menos frecuente:
-
-1. **El intérprete seleccionado en VS Code no es el correcto.** Con `Ctrl+Shift+P` → `Python: Select Interpreter` se elige explícitamente cuál Python usa el editor; si no se ha creado o seleccionado el entorno virtual del proyecto, VS Code puede estar usando un Python distinto (o ninguno) y todo el resaltado, autocompletado y ejecución fallan como si "no compilara".
-2. **Python no quedó en el `PATH` de Windows.** Si `python --version` en una terminal responde "no se reconoce como comando", Python está instalado pero no accesible; se soluciona reinstalando con la casilla "Add python.exe to PATH" marcada, o usando el lanzador `py` en su lugar (`py -0` lista las versiones instaladas, `py -3.12 --version` selecciona una en particular).
-3. **La extensión de Python de VS Code no está instalada o quedó desactualizada.** Se instala desde la pestaña de extensiones, buscando "Python" (la oficial, de Microsoft).
-
-La razón por la que este proyecto se apoya en Docker precisamente para el Ejercicio 1 es evitar depender de que el Python y las extensiones de cada máquina estén bien configurados: dentro del contenedor, la versión del intérprete y las dependencias quedan fijadas por el Dockerfile, sin importar qué esté instalado (o mal instalado) en Visual Studio Code en ese momento. Mientras se resuelve el problema local del compilador/intérprete, el programa puede seguir desarrollándose y probándose normalmente dentro de los tres contenedores.

@@ -1,0 +1,3 @@
+$ docker compose run --rm py313 pytest -q
+...................                                                      [100%]
+19 passed in 8.41s
