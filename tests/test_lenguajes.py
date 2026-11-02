@@ -104,3 +104,26 @@ def test_cerradura_positiva_rechaza_combinacion_enorme():
 
 def test_parsear_alfabeto_quita_espacios_y_duplicados():
     assert parsear_alfabeto(" a, b ,a,c") == ["a", "b", "c"]
+
+
+def test_longitud_enorme_se_rechaza_sin_calcular_todas_las_potencias():
+    with pytest.raises(ValueError):
+        cerradura_kleene(["a", "b"], 10**9)
+
+
+def test_longitud_negativa_se_rechaza():
+    with pytest.raises(ValueError):
+        cerradura_positiva(["a"], -1)
+
+
+def test_justo_en_el_limite_se_acepta():
+    # 1 + 2 + ... + 2^17 = 262143 rebasa el limite; hasta 2^16 son 131071 cadenas.
+    assert len(cerradura_kleene(["a", "b"], 16)) == 131_071
+    with pytest.raises(ValueError):
+        cerradura_kleene(["a", "b"], 17)
+
+
+def test_alfabeto_de_un_simbolo_no_agota_la_memoria():
+    # Pocas cadenas, pero demasiados simbolos en total.
+    with pytest.raises(ValueError):
+        cerradura_kleene(["a"], 199_999)

@@ -67,13 +67,41 @@ def maximo_numero_subcadenas(n: int) -> int:
 # --------------------------------------------------------------------------
 
 LIMITE_CADENAS = 200_000
+# Con un solo simbolo no se rebasa el limite de cadenas ni con longitud 200000,
+# pero esas cadenas sumarian unos 20 GB; por eso tambien se limitan los simbolos.
+LIMITE_SIMBOLOS = 20_000_000
 
 
 def _cuenta_cerradura(tam_alfabeto: int, longitud_max: int, positiva: bool) -> int:
     """Cuenta cuantas cadenas tendria Sigma* o Sigma+ hasta esa longitud,
     sin generarlas, para poder rechazar antes de construir nada."""
-    inicio = 1 if positiva else 0
-    return sum(tam_alfabeto ** i for i in range(inicio, longitud_max + 1))
+    total = 0
+    for i in range(1 if positiva else 0, longitud_max + 1):
+        total += tam_alfabeto ** i
+        # Ya se sabe que se rechazara: no hace falta seguir sumando potencias
+        # que, con una longitud enorme, tardarian demasiado en calcularse.
+        if total > LIMITE_CADENAS:
+            break
+    return total
+
+
+def _validar_cerradura(alfabeto: list[str], longitud_max: int, positiva: bool) -> None:
+    """Rechaza una peticion invalida o que excede LIMITE_CADENAS."""
+    if not alfabeto:
+        raise ValueError("El alfabeto no puede estar vacío.")
+    if longitud_max < 0:
+        raise ValueError("La longitud máxima debe ser mayor o igual que 0.")
+    if _cuenta_cerradura(len(alfabeto), longitud_max, positiva) > LIMITE_CADENAS:
+        raise ValueError(
+            f"La combinación pedida generaría más de {LIMITE_CADENAS:,} cadenas. "
+            f"Reduzca el alfabeto o la longitud máxima."
+        )
+    # Ya se sabe que las cadenas son pocas, asi que esta suma termina rapido.
+    if sum(i * len(alfabeto) ** i for i in range(longitud_max + 1)) > LIMITE_SIMBOLOS:
+        raise ValueError(
+            f"La combinación pedida ocuparía más de {LIMITE_SIMBOLOS:,} símbolos en "
+            f"memoria. Reduzca la longitud máxima."
+        )
 
 
 def cerradura_kleene(alfabeto: list[str], longitud_max: int) -> list[str]:
@@ -85,14 +113,7 @@ def cerradura_kleene(alfabeto: list[str], longitud_max: int) -> list[str]:
     de cadenas generadas crece como |Sigma|^n, asi que antes de construir
     nada se verifica el total contra LIMITE_CADENAS.
     """
-    if not alfabeto:
-        raise ValueError("El alfabeto no puede estar vacio.")
-    total = _cuenta_cerradura(len(alfabeto), longitud_max, positiva=False)
-    if total > LIMITE_CADENAS:
-        raise ValueError(
-            f"La combinacion pedida generaria {total:,} cadenas, mas de "
-            f"{LIMITE_CADENAS:,}. Reduzca el alfabeto o la longitud maxima."
-        )
+    _validar_cerradura(alfabeto, longitud_max, positiva=False)
     resultado = [""]
     for longitud in range(1, longitud_max + 1):
         for tupla in product(alfabeto, repeat=longitud):
@@ -106,14 +127,7 @@ def cerradura_positiva(alfabeto: list[str], longitud_max: int) -> list[str]:
     Sigma+ = Sigma* \\ {lambda}: es exactamente la misma construccion que
     cerradura_kleene, quitando el unico elemento de longitud 0.
     """
-    if not alfabeto:
-        raise ValueError("El alfabeto no puede estar vacio.")
-    total = _cuenta_cerradura(len(alfabeto), longitud_max, positiva=True)
-    if total > LIMITE_CADENAS:
-        raise ValueError(
-            f"La combinacion pedida generaria {total:,} cadenas, mas de "
-            f"{LIMITE_CADENAS:,}. Reduzca el alfabeto o la longitud maxima."
-        )
+    _validar_cerradura(alfabeto, longitud_max, positiva=True)
     resultado = []
     for longitud in range(1, longitud_max + 1):
         for tupla in product(alfabeto, repeat=longitud):
