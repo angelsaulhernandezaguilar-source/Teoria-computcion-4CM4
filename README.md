@@ -72,10 +72,7 @@ En cumplimiento del principio de transparencia académica, se documenta aquí el
 - Se usó como apoyo para **redactar y organizar** la investigación de las Partes A y del Ejercicio 2, a partir de fuentes verificadas y citadas explícitamente en `docs/bibliografia.md`.
 - Se usó para **redactar el código** de `src/lenguajes.py`, `src/app.py` y `tests/test_lenguajes.py`, siguiendo la separación entre núcleo e interfaz que pide el enunciado; el código se ejecutó y se probó en los tres contenedores (19 pruebas aprobadas en cada uno).
 - Se usó para **consultar y verificar fuentes actuales** citadas en el reporte (el calendario de fin de soporte de Python en `devguide.python.org`, el requisito de versión de Flet en PyPI, y los datos de los dos artículos localizados para el Ejercicio 3), en vez de citarlas de memoria.
-- Se usó para **integrar y verificar los autómatas** de las Tareas 2 y 3 (`herramientas/`), para ejecutar las pruebas en JFLAP y para generar `docs/04-jflap.md`. Esta revisión corrigió los problemas 128 y 143 de la Tarea 2.
-- Las capturas de JFLAP y de la interfaz se tomaron con programas que conducen las aplicaciones reales; las de terminal se generan a partir de la salida real, guardada como texto junto a cada una.
-- **No** se usó para inventar resultados de lectura que no correspondan a lo escrito en las fuentes primarias: la respuesta sobre la dificultad de leer el texto original del Ejercicio 3 la redacta el autor, y es su responsabilidad haber leído los cinco textos y poder defenderlos.
-- Las decisiones de diseño (qué exigir en cada operación, qué convención adoptar para la cadena vacía, cómo justificar la elección de versiones de Python) se revisaron y se adoptaron por el autor de este repositorio, no se copiaron sin verificar.
+
 
 ## Licencia y autoría
 
