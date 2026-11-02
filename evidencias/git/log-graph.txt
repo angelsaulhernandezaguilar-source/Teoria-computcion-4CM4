@@ -1,0 +1,8 @@
+$ git log --oneline --graph --all
+* 364248f Actualiza el README con índice, comandos y uso de IA
+* e18e38d Completa el reporte con citas, correcciones y evidencias reales
+* ac577bf Verifica los autómatas contra sus enunciados y en JFLAP
+* e6affdf Agrega la Lista 3 y corrige los problemas 128 y 143 de la Lista 2
+* 086da1c Corrige el guardado en Flet y limita la memoria de las cerraduras
+* 4e10497 Fija todas las dependencias para que la interfaz arranque
+* ab1daf7 Initial commit
