@@ -1,0 +1,540 @@
+automatas/lista2-afd/ejercicio_097.jff		true
+automatas/lista2-afd/ejercicio_097.jff	222001	true
+automatas/lista2-afd/ejercicio_097.jff	010122	true
+automatas/lista2-afd/ejercicio_097.jff	0111121	false
+automatas/lista2-afd/ejercicio_097.jff	2	false
+automatas/lista2-afd/ejercicio_097.jff	2022010	false
+automatas/lista2-afd/ejercicio_099.jff	001001	true
+automatas/lista2-afd/ejercicio_099.jff	11001001	true
+automatas/lista2-afd/ejercicio_099.jff	0001001	true
+automatas/lista2-afd/ejercicio_099.jff		false
+automatas/lista2-afd/ejercicio_099.jff	01001	false
+automatas/lista2-afd/ejercicio_099.jff	111001001122	false
+automatas/lista2-afd/ejercicio_102.jff	abbbab	true
+automatas/lista2-afd/ejercicio_102.jff	abbbabbbaaa	true
+automatas/lista2-afd/ejercicio_102.jff	babbbabbaa	true
+automatas/lista2-afd/ejercicio_102.jff		false
+automatas/lista2-afd/ejercicio_102.jff	bbbab	false
+automatas/lista2-afd/ejercicio_102.jff	x	false
+automatas/lista2-afd/ejercicio_103.jff	aabbba	true
+automatas/lista2-afd/ejercicio_103.jff	aabbbaabab	true
+automatas/lista2-afd/ejercicio_103.jff	bbaabbbababbb	true
+automatas/lista2-afd/ejercicio_103.jff		false
+automatas/lista2-afd/ejercicio_103.jff	abbba	false
+automatas/lista2-afd/ejercicio_103.jff	x	false
+automatas/lista2-afd/ejercicio_106.jff	1101001	true
+automatas/lista2-afd/ejercicio_106.jff	0110100102020	true
+automatas/lista2-afd/ejercicio_106.jff	1101001001202	true
+automatas/lista2-afd/ejercicio_106.jff		false
+automatas/lista2-afd/ejercicio_106.jff	101001	false
+automatas/lista2-afd/ejercicio_106.jff	x	false
+automatas/lista2-afd/ejercicio_107.jff	0101021	true
+automatas/lista2-afd/ejercicio_107.jff	0101010211	true
+automatas/lista2-afd/ejercicio_107.jff	10010102120121	true
+automatas/lista2-afd/ejercicio_107.jff		false
+automatas/lista2-afd/ejercicio_107.jff	101021	false
+automatas/lista2-afd/ejercicio_107.jff	x	false
+automatas/lista2-afd/ejercicio_109.jff	cbaabbcb	true
+automatas/lista2-afd/ejercicio_109.jff	0aaccbaabbcbb0cb00	true
+automatas/lista2-afd/ejercicio_109.jff	bbcbaabbcba	true
+automatas/lista2-afd/ejercicio_109.jff		false
+automatas/lista2-afd/ejercicio_109.jff	baabbcb	false
+automatas/lista2-afd/ejercicio_109.jff	x	false
+automatas/lista2-afd/ejercicio_111.jff	010020100201002	true
+automatas/lista2-afd/ejercicio_111.jff	01002010020100212110	true
+automatas/lista2-afd/ejercicio_111.jff	2000100201002010020021	true
+automatas/lista2-afd/ejercicio_111.jff		false
+automatas/lista2-afd/ejercicio_111.jff	10020100201002	false
+automatas/lista2-afd/ejercicio_111.jff	01002010020100201002	false
+automatas/lista2-afd/ejercicio_112.jff	010010	true
+automatas/lista2-afd/ejercicio_112.jff	0001001002112	true
+automatas/lista2-afd/ejercicio_112.jff	220100101210	true
+automatas/lista2-afd/ejercicio_112.jff		false
+automatas/lista2-afd/ejercicio_112.jff	10010	false
+automatas/lista2-afd/ejercicio_112.jff	2010010200100	false
+automatas/lista2-afd/ejercicio_113.jff	01010	true
+automatas/lista2-afd/ejercicio_113.jff	2010102122	true
+automatas/lista2-afd/ejercicio_113.jff	1001010	true
+automatas/lista2-afd/ejercicio_113.jff		false
+automatas/lista2-afd/ejercicio_113.jff	1010	false
+automatas/lista2-afd/ejercicio_113.jff	01120101010	false
+automatas/lista2-afd/ejercicio_118.jff	aaba	true
+automatas/lista2-afd/ejercicio_118.jff	aaaabaabaaa	true
+automatas/lista2-afd/ejercicio_118.jff	abbaabaaaaba	true
+automatas/lista2-afd/ejercicio_118.jff		false
+automatas/lista2-afd/ejercicio_118.jff	aba	false
+automatas/lista2-afd/ejercicio_118.jff	aaaaaabab	false
+automatas/lista2-afd/ejercicio_120.jff	01	true
+automatas/lista2-afd/ejercicio_120.jff	020122	true
+automatas/lista2-afd/ejercicio_120.jff	0111	true
+automatas/lista2-afd/ejercicio_120.jff		false
+automatas/lista2-afd/ejercicio_120.jff	1	false
+automatas/lista2-afd/ejercicio_120.jff	1101	false
+automatas/lista2-afd/ejercicio_121.jff	000	true
+automatas/lista2-afd/ejercicio_121.jff	000000	true
+automatas/lista2-afd/ejercicio_121.jff	010000	true
+automatas/lista2-afd/ejercicio_121.jff		false
+automatas/lista2-afd/ejercicio_121.jff	00	false
+automatas/lista2-afd/ejercicio_121.jff	00020200	false
+automatas/lista2-afd/ejercicio_122.jff		true
+automatas/lista2-afd/ejercicio_122.jff	0000	true
+automatas/lista2-afd/ejercicio_122.jff	01021	true
+automatas/lista2-afd/ejercicio_122.jff	022122	false
+automatas/lista2-afd/ejercicio_122.jff	02110	false
+automatas/lista2-afd/ejercicio_122.jff	2112200	false
+automatas/lista2-afd/ejercicio_123.jff	aaaa	true
+automatas/lista2-afd/ejercicio_123.jff	aaabaaaa	true
+automatas/lista2-afd/ejercicio_123.jff	aaaaa	true
+automatas/lista2-afd/ejercicio_123.jff		false
+automatas/lista2-afd/ejercicio_123.jff	aaa	false
+automatas/lista2-afd/ejercicio_123.jff	aaaaaaabbb	false
+automatas/lista2-afd/ejercicio_124.jff	0	true
+automatas/lista2-afd/ejercicio_124.jff	0010	true
+automatas/lista2-afd/ejercicio_124.jff	011001	true
+automatas/lista2-afd/ejercicio_124.jff		false
+automatas/lista2-afd/ejercicio_124.jff	1011011	false
+automatas/lista2-afd/ejercicio_124.jff	00000011	false
+automatas/lista2-afd/ejercicio_128_M.jff	010	true
+automatas/lista2-afd/ejercicio_128_M.jff	11010010111	true
+automatas/lista2-afd/ejercicio_128_M.jff	1110101	true
+automatas/lista2-afd/ejercicio_128_M.jff		false
+automatas/lista2-afd/ejercicio_128_M.jff	10	false
+automatas/lista2-afd/ejercicio_128_M.jff	0100111	false
+automatas/lista2-afd/ejercicio_128_L2.jff	01	true
+automatas/lista2-afd/ejercicio_128_L2.jff	101111	true
+automatas/lista2-afd/ejercicio_128_L2.jff	0001010	true
+automatas/lista2-afd/ejercicio_128_L2.jff		false
+automatas/lista2-afd/ejercicio_128_L2.jff	1	false
+automatas/lista2-afd/ejercicio_128_L2.jff	10010	false
+automatas/lista2-afd/ejercicio_131.jff	1	true
+automatas/lista2-afd/ejercicio_131.jff	0111111	true
+automatas/lista2-afd/ejercicio_131.jff	1000111	true
+automatas/lista2-afd/ejercicio_131.jff		false
+automatas/lista2-afd/ejercicio_131.jff	101010	false
+automatas/lista2-afd/ejercicio_131.jff	100110100	false
+automatas/lista2-afd/ejercicio_133.jff		true
+automatas/lista2-afd/ejercicio_133.jff	aabbbb	true
+automatas/lista2-afd/ejercicio_133.jff	abba	true
+automatas/lista2-afd/ejercicio_133.jff	bbb	false
+automatas/lista2-afd/ejercicio_133.jff	baaa	false
+automatas/lista2-afd/ejercicio_133.jff	baaaaabb	false
+automatas/lista2-afd/ejercicio_135.jff	bab	true
+automatas/lista2-afd/ejercicio_135.jff	bbabbb	true
+automatas/lista2-afd/ejercicio_135.jff	babbb	true
+automatas/lista2-afd/ejercicio_135.jff		false
+automatas/lista2-afd/ejercicio_135.jff	ab	false
+automatas/lista2-afd/ejercicio_135.jff	ababba	false
+automatas/lista2-afd/ejercicio_137.jff	ab	true
+automatas/lista2-afd/ejercicio_137.jff	abababa	true
+automatas/lista2-afd/ejercicio_137.jff	ababbb	true
+automatas/lista2-afd/ejercicio_137.jff		false
+automatas/lista2-afd/ejercicio_137.jff	b	false
+automatas/lista2-afd/ejercicio_137.jff	babaabb	false
+automatas/lista2-afd/ejercicio_139.jff		true
+automatas/lista2-afd/ejercicio_139.jff	11010	true
+automatas/lista2-afd/ejercicio_139.jff	001	true
+automatas/lista2-afd/ejercicio_139.jff	0100	false
+automatas/lista2-afd/ejercicio_139.jff	1100000	false
+automatas/lista2-afd/ejercicio_139.jff	000011101	false
+automatas/lista2-afd/ejercicio_141.jff		true
+automatas/lista2-afd/ejercicio_141.jff	101101	true
+automatas/lista2-afd/ejercicio_141.jff	111011	true
+automatas/lista2-afd/ejercicio_141.jff	111010	false
+automatas/lista2-afd/ejercicio_141.jff	1110000	false
+automatas/lista2-afd/ejercicio_141.jff	00001	false
+automatas/lista2-afd/ejercicio_143a.jff		true
+automatas/lista2-afd/ejercicio_143a.jff	aaabab	true
+automatas/lista2-afd/ejercicio_143a.jff	abab	true
+automatas/lista2-afd/ejercicio_143a.jff	x	false
+automatas/lista2-afd/ejercicio_143a.jff	ax	false
+automatas/lista2-afd/ejercicio_143a.jff	xa	false
+automatas/lista2-afd/ejercicio_143b.jff	a	true
+automatas/lista2-afd/ejercicio_143b.jff	aabab	true
+automatas/lista2-afd/ejercicio_143b.jff	abbb	true
+automatas/lista2-afd/ejercicio_143b.jff		false
+automatas/lista2-afd/ejercicio_143b.jff	baaaba	false
+automatas/lista2-afd/ejercicio_143b.jff	bbaaa	false
+automatas/lista2-afd/ejercicio_145.jff		true
+automatas/lista2-afd/ejercicio_145.jff	101101	true
+automatas/lista2-afd/ejercicio_145.jff	01111	true
+automatas/lista2-afd/ejercicio_145.jff	1110001	false
+automatas/lista2-afd/ejercicio_145.jff	100011	false
+automatas/lista2-afd/ejercicio_145.jff	000100	false
+automatas/lista2-afd/ejercicio_147.jff		true
+automatas/lista2-afd/ejercicio_147.jff	010010	true
+automatas/lista2-afd/ejercicio_147.jff	000	true
+automatas/lista2-afd/ejercicio_147.jff	101001	false
+automatas/lista2-afd/ejercicio_147.jff	00100	false
+automatas/lista2-afd/ejercicio_147.jff	101101	false
+automatas/lista2-afd/ejercicio_148.jff	PA	true
+automatas/lista2-afd/ejercicio_148.jff	PANS	true
+automatas/lista2-afd/ejercicio_148.jff	PAPNS	true
+automatas/lista2-afd/ejercicio_148.jff		false
+automatas/lista2-afd/ejercicio_148.jff	A	false
+automatas/lista2-afd/ejercicio_148.jff	NSAPANPN	false
+automatas/lista2-afd/ejercicio_149.jff	1	true
+automatas/lista2-afd/ejercicio_149.jff	10101	true
+automatas/lista2-afd/ejercicio_149.jff	1011101	true
+automatas/lista2-afd/ejercicio_149.jff		false
+automatas/lista2-afd/ejercicio_149.jff	110000	false
+automatas/lista2-afd/ejercicio_149.jff	101011	false
+automatas/lista2-afd/ejercicio_150.jff	0	true
+automatas/lista2-afd/ejercicio_150.jff	001	true
+automatas/lista2-afd/ejercicio_150.jff	a00	true
+automatas/lista2-afd/ejercicio_150.jff		false
+automatas/lista2-afd/ejercicio_150.jff	00a0	false
+automatas/lista2-afd/ejercicio_150.jff	0a011	false
+automatas/lista3-afn/AFN_T2_97.jff		true
+automatas/lista3-afn/AFN_T2_97.jff	011221	true
+automatas/lista3-afn/AFN_T2_97.jff	001001202	true
+automatas/lista3-afn/AFN_T2_97.jff	2022112	false
+automatas/lista3-afn/AFN_T2_97.jff	0000	false
+automatas/lista3-afn/AFN_T2_97.jff	2200	false
+automatas/lista3-afn/AFN_T2_99.jff	001001	true
+automatas/lista3-afn/AFN_T2_99.jff	100001001	true
+automatas/lista3-afn/AFN_T2_99.jff	1012001001	true
+automatas/lista3-afn/AFN_T2_99.jff		false
+automatas/lista3-afn/AFN_T2_99.jff	01001	false
+automatas/lista3-afn/AFN_T2_99.jff	02000010010	false
+automatas/lista3-afn/AFN_T2_102.jff	abbbab	true
+automatas/lista3-afn/AFN_T2_102.jff	abbabbbabaabbbb	true
+automatas/lista3-afn/AFN_T2_102.jff	aababbbabb	true
+automatas/lista3-afn/AFN_T2_102.jff		false
+automatas/lista3-afn/AFN_T2_102.jff	bbbab	false
+automatas/lista3-afn/AFN_T2_102.jff	x	false
+automatas/lista3-afn/AFN_T2_103.jff	aabbba	true
+automatas/lista3-afn/AFN_T2_103.jff	baaabbbaa	true
+automatas/lista3-afn/AFN_T2_103.jff	bbaaabbbabbbb	true
+automatas/lista3-afn/AFN_T2_103.jff		false
+automatas/lista3-afn/AFN_T2_103.jff	abbba	false
+automatas/lista3-afn/AFN_T2_103.jff	x	false
+automatas/lista3-afn/AFN_T2_106.jff	1101001	true
+automatas/lista3-afn/AFN_T2_106.jff	021101001	true
+automatas/lista3-afn/AFN_T2_106.jff	00110100112	true
+automatas/lista3-afn/AFN_T2_106.jff		false
+automatas/lista3-afn/AFN_T2_106.jff	101001	false
+automatas/lista3-afn/AFN_T2_106.jff	x	false
+automatas/lista3-afn/AFN_T2_107.jff	0101021	true
+automatas/lista3-afn/AFN_T2_107.jff	012010102102	true
+automatas/lista3-afn/AFN_T2_107.jff	2020101021120	true
+automatas/lista3-afn/AFN_T2_107.jff		false
+automatas/lista3-afn/AFN_T2_107.jff	101021	false
+automatas/lista3-afn/AFN_T2_107.jff	x	false
+automatas/lista3-afn/AFN_T2_109.jff	cbaabbcb	true
+automatas/lista3-afn/AFN_T2_109.jff	cbaabbcb0b0a1a	true
+automatas/lista3-afn/AFN_T2_109.jff	cacbaabbcb0	true
+automatas/lista3-afn/AFN_T2_109.jff		false
+automatas/lista3-afn/AFN_T2_109.jff	baabbcb	false
+automatas/lista3-afn/AFN_T2_109.jff	x	false
+automatas/lista3-afn/AFN_T2_111.jff	010020100201002	true
+automatas/lista3-afn/AFN_T2_111.jff	022001002010020100202121	true
+automatas/lista3-afn/AFN_T2_111.jff	2110100201002010021020	true
+automatas/lista3-afn/AFN_T2_111.jff		false
+automatas/lista3-afn/AFN_T2_111.jff	10020100201002	false
+automatas/lista3-afn/AFN_T2_111.jff	0001010020100201002010022	false
+automatas/lista3-afn/AFN_T2_112.jff	010010	true
+automatas/lista3-afn/AFN_T2_112.jff	10200100100	true
+automatas/lista3-afn/AFN_T2_112.jff	120010010	true
+automatas/lista3-afn/AFN_T2_112.jff		false
+automatas/lista3-afn/AFN_T2_112.jff	10010	false
+automatas/lista3-afn/AFN_T2_112.jff	201001022010	false
+automatas/lista3-afn/AFN_T2_113.jff	01010	true
+automatas/lista3-afn/AFN_T2_113.jff	010102	true
+automatas/lista3-afn/AFN_T2_113.jff	120101021	true
+automatas/lista3-afn/AFN_T2_113.jff		false
+automatas/lista3-afn/AFN_T2_113.jff	1010	false
+automatas/lista3-afn/AFN_T2_113.jff	0101010021	false
+automatas/lista3-afn/AFN_T2_118.jff	aaba	true
+automatas/lista3-afn/AFN_T2_118.jff	abaababa	true
+automatas/lista3-afn/AFN_T2_118.jff	aababaa	true
+automatas/lista3-afn/AFN_T2_118.jff		false
+automatas/lista3-afn/AFN_T2_118.jff	aba	false
+automatas/lista3-afn/AFN_T2_118.jff	baaaabaaaabbb	false
+automatas/lista3-afn/AFN_T2_120.jff	01	true
+automatas/lista3-afn/AFN_T2_120.jff	2101000101	true
+automatas/lista3-afn/AFN_T2_120.jff	11001111002	true
+automatas/lista3-afn/AFN_T2_120.jff		false
+automatas/lista3-afn/AFN_T2_120.jff	1	false
+automatas/lista3-afn/AFN_T2_120.jff	20200111022	false
+automatas/lista3-afn/AFN_T2_121.jff	000	true
+automatas/lista3-afn/AFN_T2_121.jff	100002	true
+automatas/lista3-afn/AFN_T2_121.jff	010200012120	true
+automatas/lista3-afn/AFN_T2_121.jff		false
+automatas/lista3-afn/AFN_T2_121.jff	00	false
+automatas/lista3-afn/AFN_T2_121.jff	000100221	false
+automatas/lista3-afn/AFN_T2_122.jff		true
+automatas/lista3-afn/AFN_T2_122.jff	210	true
+automatas/lista3-afn/AFN_T2_122.jff	100	true
+automatas/lista3-afn/AFN_T2_122.jff	222200	false
+automatas/lista3-afn/AFN_T2_122.jff	01111	false
+automatas/lista3-afn/AFN_T2_122.jff	0121	false
+automatas/lista3-afn/AFN_T2_123.jff	aaaa	true
+automatas/lista3-afn/AFN_T2_123.jff	aaaaaaa	true
+automatas/lista3-afn/AFN_T2_123.jff	aabbaaaaaaaaa	true
+automatas/lista3-afn/AFN_T2_123.jff		false
+automatas/lista3-afn/AFN_T2_123.jff	aaa	false
+automatas/lista3-afn/AFN_T2_123.jff	abaaaa	false
+automatas/lista3-afn/ej151_original.jff	0	true
+automatas/lista3-afn/ej151_original.jff	000	true
+automatas/lista3-afn/ej151_original.jff	0000110	true
+automatas/lista3-afn/ej151_original.jff		false
+automatas/lista3-afn/ej151_original.jff	011101111	false
+automatas/lista3-afn/ej151_original.jff	0001111	false
+automatas/lista3-afn/ej151_simplificado.jff	0	true
+automatas/lista3-afn/ej151_simplificado.jff	00010	true
+automatas/lista3-afn/ej151_simplificado.jff	11110010101	true
+automatas/lista3-afn/ej151_simplificado.jff		false
+automatas/lista3-afn/ej151_simplificado.jff	001111	false
+automatas/lista3-afn/ej151_simplificado.jff	11101011	false
+automatas/lista3-afn/ej152_original.jff	1	true
+automatas/lista3-afn/ej152_original.jff	01110022	true
+automatas/lista3-afn/ej152_original.jff	111	true
+automatas/lista3-afn/ej152_original.jff		false
+automatas/lista3-afn/ej152_original.jff	11101	false
+automatas/lista3-afn/ej152_original.jff	021	false
+automatas/lista3-afn/ej152_simplificado.jff	1	true
+automatas/lista3-afn/ej152_simplificado.jff	21121	true
+automatas/lista3-afn/ej152_simplificado.jff	2210	true
+automatas/lista3-afn/ej152_simplificado.jff		false
+automatas/lista3-afn/ej152_simplificado.jff	1220002	false
+automatas/lista3-afn/ej152_simplificado.jff	11101	false
+automatas/lista3-afn/ej153_original.jff	00	true
+automatas/lista3-afn/ej153_original.jff	000011	true
+automatas/lista3-afn/ej153_original.jff	0000	true
+automatas/lista3-afn/ej153_original.jff		false
+automatas/lista3-afn/ej153_original.jff	0	false
+automatas/lista3-afn/ej153_original.jff	00001	false
+automatas/lista3-afn/ej153_simplificado.jff	00	true
+automatas/lista3-afn/ej153_simplificado.jff	010000001110	true
+automatas/lista3-afn/ej153_simplificado.jff	0010001110	true
+automatas/lista3-afn/ej153_simplificado.jff		false
+automatas/lista3-afn/ej153_simplificado.jff	0	false
+automatas/lista3-afn/ej153_simplificado.jff	01000000	false
+automatas/lista3-afn/ej154_original.jff	01	true
+automatas/lista3-afn/ej154_original.jff	000101	true
+automatas/lista3-afn/ej154_original.jff	101	true
+automatas/lista3-afn/ej154_original.jff		false
+automatas/lista3-afn/ej154_original.jff	1	false
+automatas/lista3-afn/ej154_original.jff	00111111	false
+automatas/lista3-afn/ej154_sin_inaccesibles.jff	01	true
+automatas/lista3-afn/ej154_sin_inaccesibles.jff	01000	true
+automatas/lista3-afn/ej154_sin_inaccesibles.jff	000010	true
+automatas/lista3-afn/ej154_sin_inaccesibles.jff		false
+automatas/lista3-afn/ej154_sin_inaccesibles.jff	1	false
+automatas/lista3-afn/ej154_sin_inaccesibles.jff	0111110	false
+automatas/lista3-afn/ej154_simplificado.jff	01	true
+automatas/lista3-afn/ej154_simplificado.jff	110111	true
+automatas/lista3-afn/ej154_simplificado.jff	101	true
+automatas/lista3-afn/ej154_simplificado.jff		false
+automatas/lista3-afn/ej154_simplificado.jff	1	false
+automatas/lista3-afn/ej154_simplificado.jff	00110110	false
+automatas/lista3-afn/ej155_original.jff	010	true
+automatas/lista3-afn/ej155_original.jff	101010	true
+automatas/lista3-afn/ej155_original.jff	0110100010	true
+automatas/lista3-afn/ej155_original.jff		false
+automatas/lista3-afn/ej155_original.jff	10	false
+automatas/lista3-afn/ej155_original.jff	100101011	false
+automatas/lista3-afn/ej155_sin_inaccesibles.jff	010	true
+automatas/lista3-afn/ej155_sin_inaccesibles.jff	00010	true
+automatas/lista3-afn/ej155_sin_inaccesibles.jff	00001001100	true
+automatas/lista3-afn/ej155_sin_inaccesibles.jff		false
+automatas/lista3-afn/ej155_sin_inaccesibles.jff	10	false
+automatas/lista3-afn/ej155_sin_inaccesibles.jff	1010	false
+automatas/lista3-afn/ej155_simplificado.jff	010	true
+automatas/lista3-afn/ej155_simplificado.jff	1011010011100	true
+automatas/lista3-afn/ej155_simplificado.jff	100101010	true
+automatas/lista3-afn/ej155_simplificado.jff		false
+automatas/lista3-afn/ej155_simplificado.jff	10	false
+automatas/lista3-afn/ej155_simplificado.jff	111010	false
+automatas/lista3-afn/ej156_original.jff	01	true
+automatas/lista3-afn/ej156_original.jff	11000111	true
+automatas/lista3-afn/ej156_original.jff	0011011	true
+automatas/lista3-afn/ej156_original.jff		false
+automatas/lista3-afn/ej156_original.jff	1	false
+automatas/lista3-afn/ej156_original.jff	10011	false
+automatas/lista3-afn/ej156_simplificado.jff	01	true
+automatas/lista3-afn/ej156_simplificado.jff	010001101	true
+automatas/lista3-afn/ej156_simplificado.jff	00001011101	true
+automatas/lista3-afn/ej156_simplificado.jff		false
+automatas/lista3-afn/ej156_simplificado.jff	1	false
+automatas/lista3-afn/ej156_simplificado.jff	001010	false
+automatas/lista3-afn/ej157_original.jff	1	true
+automatas/lista3-afn/ej157_original.jff	01100100	true
+automatas/lista3-afn/ej157_original.jff	111110	true
+automatas/lista3-afn/ej157_original.jff		false
+automatas/lista3-afn/ej157_original.jff	101	false
+automatas/lista3-afn/ej157_original.jff	0010100	false
+automatas/lista3-afn/ej157_simplificado.jff	1	true
+automatas/lista3-afn/ej157_simplificado.jff	10	true
+automatas/lista3-afn/ej157_simplificado.jff	1111110010	true
+automatas/lista3-afn/ej157_simplificado.jff		false
+automatas/lista3-afn/ej157_simplificado.jff	0011110	false
+automatas/lista3-afn/ej157_simplificado.jff	110	false
+automatas/lista3-afn/ej158.jff	01	true
+automatas/lista3-afn/ej158.jff		false
+automatas/lista3-afn/ej158.jff	1	false
+automatas/lista3-afn/ej158.jff	10111100	false
+automatas/lista3-afn/ej159.jff	01	true
+automatas/lista3-afn/ej159.jff	101	true
+automatas/lista3-afn/ej159.jff	11101	true
+automatas/lista3-afn/ej159.jff		false
+automatas/lista3-afn/ej159.jff	1	false
+automatas/lista3-afn/ej159.jff	101010	false
+automatas/lista3-afn/ej160.jff	01	true
+automatas/lista3-afn/ej160.jff	0110011	true
+automatas/lista3-afn/ej160.jff	01001011	true
+automatas/lista3-afn/ej160.jff		false
+automatas/lista3-afn/ej160.jff	1	false
+automatas/lista3-afn/ej160.jff	001100	false
+automatas/lista3-afn/ej161.jff		true
+automatas/lista3-afn/ej161.jff	010	true
+automatas/lista3-afn/ej161.jff	010010	true
+automatas/lista3-afn/ej161.jff	100010	false
+automatas/lista3-afn/ej161.jff	0010	false
+automatas/lista3-afn/ej161.jff	1011	false
+automatas/lista3-afn/ej189_AFN.jff	00101	true
+automatas/lista3-afn/ej189_AFN.jff	00101001101	true
+automatas/lista3-afn/ej189_AFN.jff	11100010101100	true
+automatas/lista3-afn/ej189_AFN.jff		false
+automatas/lista3-afn/ej189_AFN.jff	0101	false
+automatas/lista3-afn/ej189_AFN.jff	x	false
+automatas/lista3-afn/ej190_AFN.jff	110100	true
+automatas/lista3-afn/ej190_AFN.jff	1101110100	true
+automatas/lista3-afn/ej190_AFN.jff	10111010001	true
+automatas/lista3-afn/ej190_AFN.jff		false
+automatas/lista3-afn/ej190_AFN.jff	10100	false
+automatas/lista3-afn/ej190_AFN.jff	x	false
+automatas/lista3-afn/ej192_AFN.jff	1	true
+automatas/lista3-afn/ej192_AFN.jff	00101	true
+automatas/lista3-afn/ej192_AFN.jff	001010001	true
+automatas/lista3-afn/ej192_AFN.jff		false
+automatas/lista3-afn/ej192_AFN.jff	11111	false
+automatas/lista3-afn/ej192_AFN.jff	01111	false
+automatas/lista3-afn/ej192_AFD.jff	1	true
+automatas/lista3-afn/ej192_AFD.jff	10101000	true
+automatas/lista3-afn/ej192_AFD.jff	10	true
+automatas/lista3-afn/ej192_AFD.jff		false
+automatas/lista3-afn/ej192_AFD.jff	1010111010	false
+automatas/lista3-afn/ej192_AFD.jff	01010000	false
+automatas/lista3-afn/ej193_AFN.jff	10	true
+automatas/lista3-afn/ej193_AFN.jff	1101010	true
+automatas/lista3-afn/ej193_AFN.jff	1111011	true
+automatas/lista3-afn/ej193_AFN.jff		false
+automatas/lista3-afn/ej193_AFN.jff	0	false
+automatas/lista3-afn/ej193_AFN.jff	101011100	false
+automatas/lista3-afn/ej193_AFD.jff	10	true
+automatas/lista3-afn/ej193_AFD.jff	110	true
+automatas/lista3-afn/ej193_AFD.jff	11100111	true
+automatas/lista3-afn/ej193_AFD.jff		false
+automatas/lista3-afn/ej193_AFD.jff	0	false
+automatas/lista3-afn/ej193_AFD.jff	0101011	false
+automatas/lista3-afn/ej194_AFN.jff	1	true
+automatas/lista3-afn/ej194_AFN.jff	12001	true
+automatas/lista3-afn/ej194_AFN.jff	001112201	true
+automatas/lista3-afn/ej194_AFN.jff		false
+automatas/lista3-afn/ej194_AFN.jff	2200120212	false
+automatas/lista3-afn/ej194_AFN.jff	10222	false
+automatas/lista3-afn/ej194_AFD.jff	1	true
+automatas/lista3-afn/ej194_AFD.jff	11010001	true
+automatas/lista3-afn/ej194_AFD.jff	11	true
+automatas/lista3-afn/ej194_AFD.jff		false
+automatas/lista3-afn/ej194_AFD.jff	121102	false
+automatas/lista3-afn/ej194_AFD.jff	1201212	false
+automatas/lista3-afn/ej195_AFN.jff	01	true
+automatas/lista3-afn/ej195_AFN.jff	101011011	true
+automatas/lista3-afn/ej195_AFN.jff	1001	true
+automatas/lista3-afn/ej195_AFN.jff		false
+automatas/lista3-afn/ej195_AFN.jff	1	false
+automatas/lista3-afn/ej195_AFN.jff	00000101011	false
+automatas/lista3-afn/ej195_AFD.jff	01	true
+automatas/lista3-afn/ej195_AFD.jff	11000111	true
+automatas/lista3-afn/ej195_AFD.jff	0101	true
+automatas/lista3-afn/ej195_AFD.jff		false
+automatas/lista3-afn/ej195_AFD.jff	1	false
+automatas/lista3-afn/ej195_AFD.jff	110010	false
+automatas/lista3-afn/ej254.jff	1	true
+automatas/lista3-afn/ej254.jff	11011000101	true
+automatas/lista3-afn/ej254.jff	11	true
+automatas/lista3-afn/ej254.jff		false
+automatas/lista3-afn/ej254.jff	010010	false
+automatas/lista3-afn/ej254.jff	1101100	false
+automatas/lista3-afn/ej255.jff		true
+automatas/lista3-afn/ej255.jff	000000	true
+automatas/lista3-afn/ej255.jff	1000	true
+automatas/lista3-afn/ej255.jff	011110111	false
+automatas/lista3-afn/ej255.jff	000	false
+automatas/lista3-afn/ej255.jff	0	false
+automatas/lista3-afn/ej256.jff	0	true
+automatas/lista3-afn/ej256.jff	201	true
+automatas/lista3-afn/ej256.jff	2222002220	true
+automatas/lista3-afn/ej256.jff		false
+automatas/lista3-afn/ej256.jff	12202	false
+automatas/lista3-afn/ej256.jff	20102	false
+automatas/lista3-afn/ej257.jff	0	true
+automatas/lista3-afn/ej257.jff	0000	true
+automatas/lista3-afn/ej257.jff	0010	true
+automatas/lista3-afn/ej257.jff		false
+automatas/lista3-afn/ej257.jff	000	false
+automatas/lista3-afn/ej257.jff	1110000000	false
+automatas/lista3-afn/ej258.jff	0	true
+automatas/lista3-afn/ej258.jff	10110111111	true
+automatas/lista3-afn/ej258.jff	110101010	true
+automatas/lista3-afn/ej258.jff		false
+automatas/lista3-afn/ej258.jff	10000011	false
+automatas/lista3-afn/ej258.jff	00000100	false
+automatas/lista3-afn/ej260_AFN.jff	10	true
+automatas/lista3-afn/ej260_AFN.jff	101010	true
+automatas/lista3-afn/ej260_AFN.jff	101101	true
+automatas/lista3-afn/ej260_AFN.jff		false
+automatas/lista3-afn/ej260_AFN.jff	0	false
+automatas/lista3-afn/ej260_AFN.jff	010110010101	false
+automatas/lista3-afn/ej260_AFD.jff	10	true
+automatas/lista3-afn/ej260_AFD.jff	100100000	true
+automatas/lista3-afn/ej260_AFD.jff	1101000	true
+automatas/lista3-afn/ej260_AFD.jff		false
+automatas/lista3-afn/ej260_AFD.jff	0	false
+automatas/lista3-afn/ej260_AFD.jff	010101	false
+automatas/lista3-afn/ej260_AFD_min.jff	10	true
+automatas/lista3-afn/ej260_AFD_min.jff	1010	true
+automatas/lista3-afn/ej260_AFD_min.jff	101	true
+automatas/lista3-afn/ej260_AFD_min.jff		false
+automatas/lista3-afn/ej260_AFD_min.jff	0	false
+automatas/lista3-afn/ej260_AFD_min.jff	0010110110	false
+automatas/lista3-afn/ej261_AFN.jff	00	true
+automatas/lista3-afn/ej261_AFN.jff	1000001100	true
+automatas/lista3-afn/ej261_AFN.jff	0000010000	true
+automatas/lista3-afn/ej261_AFN.jff		false
+automatas/lista3-afn/ej261_AFN.jff	0	false
+automatas/lista3-afn/ej261_AFN.jff	100011101	false
+automatas/lista3-afn/ej261_AFD.jff	00	true
+automatas/lista3-afn/ej261_AFD.jff	0000	true
+automatas/lista3-afn/ej261_AFD.jff	001000000	true
+automatas/lista3-afn/ej261_AFD.jff		false
+automatas/lista3-afn/ej261_AFD.jff	0	false
+automatas/lista3-afn/ej261_AFD.jff	011100101010	false
+automatas/lista3-afn/ej261_AFD_min.jff	00	true
+automatas/lista3-afn/ej261_AFD_min.jff	0100	true
+automatas/lista3-afn/ej261_AFD_min.jff	100	true
+automatas/lista3-afn/ej261_AFD_min.jff		false
+automatas/lista3-afn/ej261_AFD_min.jff	0	false
+automatas/lista3-afn/ej261_AFD_min.jff	00110011	false
+automatas/lista3-afn/ej262_AFN.jff	ab	true
+automatas/lista3-afn/ej262_AFN.jff		false
+automatas/lista3-afn/ej262_AFN.jff	b	false
+automatas/lista3-afn/ej262_AFN.jff	aaab	false
+automatas/lista3-afn/ej262_AFD.jff	ab	true
+automatas/lista3-afn/ej262_AFD.jff		false
+automatas/lista3-afn/ej262_AFD.jff	b	false
+automatas/lista3-afn/ej262_AFD.jff	babb	false
+automatas/lista3-afn/ej263_AFN.jff	01	true
+automatas/lista3-afn/ej263_AFN.jff	110110101	true
+automatas/lista3-afn/ej263_AFN.jff	10101111001	true
+automatas/lista3-afn/ej263_AFN.jff		false
+automatas/lista3-afn/ej263_AFN.jff	1	false
+automatas/lista3-afn/ej263_AFN.jff	011010011	false
+automatas/lista3-afn/ej263_AFD.jff	01	true
+automatas/lista3-afn/ej263_AFD.jff	001	true
+automatas/lista3-afn/ej263_AFD.jff	100111101	true
+automatas/lista3-afn/ej263_AFD.jff		false
+automatas/lista3-afn/ej263_AFD.jff	1	false
+automatas/lista3-afn/ej263_AFD.jff	01101001111	false
