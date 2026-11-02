@@ -67,7 +67,7 @@ pytest -q
 
 ## Uso de inteligencia artificial en este trabajo
 
-En cumplimiento del principio de transparencia académica, se documenta aquí el uso de un asistente de inteligencia artificial (Claude, de Anthropic) en la elaboración de esta práctica:
+En cumplimiento del principio de transparencia académica, se documenta aquí el uso de un asistente de inteligencia artificial en la elaboración de esta práctica:
 
 - Se usó como apoyo para **redactar y organizar** la investigación de las Partes A y del Ejercicio 2, a partir de fuentes verificadas y citadas explícitamente en `docs/bibliografia.md`.
 - Se usó para **redactar el código** de `src/lenguajes.py`, `src/app.py` y `tests/test_lenguajes.py`, siguiendo la separación entre núcleo e interfaz que pide el enunciado; el código se ejecutó y se probó en los tres contenedores (19 pruebas aprobadas en cada uno).
