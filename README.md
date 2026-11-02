@@ -64,7 +64,6 @@ En cumplimiento del principio de transparencia académica, se documenta aquí el
 - Se usó como apoyo para **redactar y organizar** la investigación de las Partes A y del Ejercicio 2, a partir de fuentes verificadas y citadas explícitamente en `docs/bibliografia.md`.
 - Se usó para **redactar el código** de `src/lenguajes.py`, `src/app.py` y `tests/test_lenguajes.py`, siguiendo la separación entre núcleo e interfaz que pide el enunciado; el código se ejecutó y se probó (`pytest -q`, 14 pruebas aprobadas) antes de incluirse en este repositorio.
 - Se usó para **consultar y verificar fuentes actuales** citadas en el reporte (el calendario de fin de soporte de Python en `devguide.python.org`, el requisito de versión de Flet en PyPI, y los datos de los dos artículos localizados para el Ejercicio 3), en vez de citarlas de memoria.
-- **No** se usó para inventar resultados de lectura que no correspondan a lo escrito en las fuentes primarias: las fichas de los tres artículos asignados del Ejercicio 3 se redactaron a partir del contenido real de cada documento, pero es responsabilidad de Ángel Saúl Hernández Aguilar haberlos leído y poder defenderlos.
 - Las decisiones de diseño (qué exigir en cada operación, qué convención adoptar para la cadena vacía, cómo justificar la elección de versiones de Python) se revisaron y se adoptaron por el autor de este repositorio, no se copiaron sin verificar.
 
 ## Licencia y autoría
