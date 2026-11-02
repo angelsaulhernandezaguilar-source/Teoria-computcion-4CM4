@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Ejercicio 261: AFD minimo-->
+<structure>
+	<type>fa</type>
+	<automaton>
+		<state id="0" name="{{q0},{q0,q3},{q0,q3,q4}}">
+			<x>253.2</x>
+			<y>116.6</y>
+			<initial/>
+		</state>
+		<state id="1" name="{q0,q1}">
+			<x>482.9</x>
+			<y>80.0</y>
+		</state>
+		<state id="2" name="{q0,q1,q2}">
+			<x>641.1</x>
+			<y>136.7</y>
+			<final/>
+		</state>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>2</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>0</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>0</to>
+			<read>1</read>
+		</transition>
+	</automaton>
+</structure>

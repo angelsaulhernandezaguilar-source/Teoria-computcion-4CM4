@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Ejercicio 194: AFN-->
+<structure>
+	<type>fa</type>
+	<automaton>
+		<state id="0" name="A">
+			<x>142.6</x>
+			<y>102.4</y>
+			<initial/>
+		</state>
+		<state id="1" name="B">
+			<x>471.9</x>
+			<y>80.0</y>
+		</state>
+		<state id="2" name="C">
+			<x>259.4</x>
+			<y>113.1</y>
+			<final/>
+		</state>
+		<state id="3" name="D">
+			<x>368.1</x>
+			<y>146.1</y>
+			<final/>
+		</state>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>2</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>0</to>
+			<read>2</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>0</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>1</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>0</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>1</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>1</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>0</to>
+			<read>1</read>
+		</transition>
+	</automaton>
+</structure>

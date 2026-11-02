@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<structure>
+	<type>re</type>
+	<expression>01(0+1)*+(0+1)*10</expression>
+</structure>

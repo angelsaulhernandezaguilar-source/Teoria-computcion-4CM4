@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Ejercicio 155: automata minimo-->
+<structure>
+	<type>fa</type>
+	<automaton>
+		<state id="0" name="AJ">
+			<x>142.6</x>
+			<y>114.2</y>
+			<initial/>
+		</state>
+		<state id="1" name="BDH">
+			<x>244.0</x>
+			<y>114.2</y>
+		</state>
+		<state id="2" name="CG">
+			<x>553.2</x>
+			<y>80.0</y>
+		</state>
+		<state id="3" name="EK">
+			<x>345.4</x>
+			<y>87.1</y>
+		</state>
+		<state id="4" name="F">
+			<x>449.3</x>
+			<y>146.1</y>
+			<final/>
+		</state>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>2</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>1</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>3</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>2</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>4</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>1</to>
+			<read>1</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>0</to>
+			<read>0</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>2</to>
+			<read>1</read>
+		</transition>
+	</automaton>
+</structure>

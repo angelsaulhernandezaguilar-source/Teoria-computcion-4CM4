@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Ejercicio 262: AFD equivalente-->
+<structure>
+	<type>fa</type>
+	<automaton>
+		<state id="0" name="{q0}">
+			<x>148.2</x>
+			<y>115.4</y>
+			<initial/>
+		</state>
+		<state id="1" name="{q1}">
+			<x>258.7</x>
+			<y>80.0</y>
+		</state>
+		<state id="2" name="{q2}">
+			<x>258.7</x>
+			<y>150.8</y>
+		</state>
+		<state id="3" name="∅">
+			<x>496.4</x>
+			<y>123.7</y>
+		</state>
+		<state id="4" name="{q3}">
+			<x>373.9</x>
+			<y>123.7</y>
+			<final/>
+		</state>
+		<transition>
+			<from>0</from>
+			<to>1</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>0</from>
+			<to>2</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>3</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>1</from>
+			<to>4</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>4</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>2</from>
+			<to>3</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>3</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>3</from>
+			<to>3</to>
+			<read>b</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>3</to>
+			<read>a</read>
+		</transition>
+		<transition>
+			<from>4</from>
+			<to>3</to>
+			<read>b</read>
+		</transition>
+	</automaton>
+</structure>
